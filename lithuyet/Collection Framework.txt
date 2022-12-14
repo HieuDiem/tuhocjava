@@ -1,0 +1,76 @@
+
+LƯU TRỮ VÀ XỬ LÝ NHIỀU DATA / NHIỀU OBJ
+( ta cần đi mua túi, giỏ, balo, túi để đựng)
+~~ NEW cái túi, giỏ, balo
+new tủ xong new món đồ
+
+TỦ tucuatui = new TỦ();// trg ram sẽ có vùng khong gian đựng dồ
+			// ngoài đời tủ chiếm 1 góc phòng để ta đựng đồ
+tucuatui.adđoVao(món đồ đưa vào tủ)// tủ cho phép mình bỏ đồ vào
+
+LoNuong locuatui = new LoNuong();// mua lo về chiếm S trg bếp
+locuatui.addDoNuong(conga de nuong)
+
+TỦ là OBJ chứa nhiều đồ
+1. mua tủ                 TỦ tucuatui = new TỦ();
+2. mua đồ bỏ vào tủ        tucuatui.addMonDo(new/mua 1 món đồ đưa vào tủ)
+
+CÓ 2 LOẠI TỦ
+1. Tủ laoij 1: FIX CỨNG SỐ ĐỒ ĐỂ VÔ, giới hạn món đồ
+CHÍNH LÀ MẢNG[số đồ để vô]
+mảng là khai báo nhiều biến nhiều chỗ chữa[Fix số chỗ]
+y chang xe khách [16 chỗ ngồi]
+chứa tọa độ vùng new món đồ
+[i] = new món đò() cứ thoải mái nằm đâu đó, ta lưu tọa độ
+Student arr[] = new Student[100];// có 100  sv
+
+//tên mảng chính là tên gọi cho 1 cái tủ fix số chỗ
+// vì nó đến new[số chỗ]
+// bỏ đồ vào mảng, ko cần dùng hmaf, hành động của tủ
+arr[0]= new món đò bỏ vô;// --tucuatui.addMonDo(new món đồ);
+
+* dù tủ loại 1 hay 2 thì đều chứa đô, đồ để thật sự vào trg tủ
+hay chỉ giữ dsach tham chiếu đều ok
+
+tủ hồ sơ giữ ds tham chiếu, google meet giữ ds tham chiếu, ds kí tên(tủ) chứa tham chiếu
+tủ quần áo chưa đồ thật luôn -mảng primitive value lấy xài luôn
+
+2. TỦ LOẠI 2: co giãn số đồ để vào, cần thêm chỗ có luôn, ko cần xin,
+ cứ để đồ là thêm chỗ
+ko sờ [i] vào vị trí chỗ
+xin qua dây kéo, khóa, ngăn, cách cửa, mở ra nhét đò vô
+tuCUaTui[i] = món đồ bỏ vô -> mảng
+tuCuaTui.add(món đồ bỏ vô) bỏ đồ vô qua hđ của tủ, ko sờ trực tiếp ngăn chứa [i]
+bỏ vô tự tủ lo bên trg
+
+VẪN code như xưa nay: new tủ, . gọi hàm hành động của tủ đô new riêng để vô
+mua tủ và mua đồ và cất đồ
+
+New 3 loại tủ này, giống các thương hiệu túi xách balo
+ArrayList, Vector        | HashSet, TreeSet   | HashMap, TreeMap
+
+ADDđồ(món đồ khác đi mua) vào tủ ngăn thứ [i] nào đó nhìn theo kiểu mnagr
+đều chứa tham chiếu, linh hoạt trg việc để các món đồ
+
+Tủ thật, túi thật mua về để xài, new đc, ko phải abs, hoàn hảo để dùng,
+full code hđ
+
+ Con   ArrayList, Vector        | HashSet, TreeSet   | HashMap, TreeMap
+Phân loại cao hơn cho tủ giỏ
+ CHA       List                      Set               Map(bộ ánh xạ,
+ABS/INTF		          tập hơp	     từ cái này-> cái kia)
+
+	vào thứ tự nào            HashSet lộn xộn tt
+        ra thứ tự ấy              TreeSet sx tự động!!
+        mảng nâng cao, co         ko đc lặp lại món đồ l2
+        giãn kích thước 
+        vào trước, ngồi [0]
+        vào sau,   ngồi [1]
+vd ngoiaf thực tế cho tke só luotj vé bán, ng xem film
+      1 ng có thẻ đến nhiều lần    mỗi ng chỉ đc xem 1 lần
+ 
+lít, set, map chỉ lưu tham chiếu,  con trỏ,add con trỏ vaofvungf new món đồ thỏa mái ở HEAP
+add và lấy qua hàm hành động mở dây kéo, ngăn 
+mảng obj y chang vaayk luôn chứa tham chiếu, lưu con trỏ add lấy qua cùng new trg heap        
+
+

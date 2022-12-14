@@ -1,0 +1,45 @@
+
+OOP CONCEPTS/ OOP PRINCIPLES/ FUNDAMENTAL CONCEPT OF OOP/ FOUR PILLARS OF OOP
+
+1. ABSTRACTION: tính trừu tượng hóa mọi vật(ko nhầm lẫn với ABSTRACT CLASS)
+- là tư duy, cách suy nghĩ, để biến hóa những thứ phức tạp trg cs thành những thứ đơn giản hơn 
+nhưng vẫn biểu diễn đúng nghĩa ban đầu
+- là cách nói về những thứ phức tạp trg cs thông qua 1 thứ khác ggown giản hơn nhung vẫn giữ nghĩa
+- cách lấy ra nhứng thông tin quan trg nhất,tiêu biểu nhất của 1 obj phức tạp ở ngoài đời để biểu 
+diễn lại cho ai cũng hiểu được thứ phức tạp
+- mộtthứ phưcs tạp ngoài đời đc biểu diễn 1 thứ đơn giản hơn nhưng ko mất chất
+USING A SIMPLE THINGS TO REPRESENT THE COMPLEX THINGS 
+
+- tư duy nắm bắt thông tin cốt lõi qtrg của obj ngoài đời, dùng biểu diễn lại obj
+VD: sv ngoiaf đời có info rất phức tạp như: teenn, tuổi, bm, điểm thi,...
+trường đh ko cần hết tt nhưng vẫn quản lý được thông tin bằng cách tìm ra những info đặc trưng
+SV(ID, email, tên, ddianj chỉ, sđt, chuyên ngành, môn học , điểm thi)
+=> timd ra đặc điểm quan trọng của 1 obj,, tìm đặc điểm cho 1 class/khuôn -> ABSTRACTION
+
+
+2. ENCAPSULATION: tính cô lập và đóng gói mọi thứ
+- Nhận diện 1 đối tương bao gồm đặc tính và hành vi, gom chung trong 1 đơn vị 
+- hàm( xử lý data) + biến(data) gom vào 1 đơn vị code, class, obj
+- gom xong dấu/ che đi bằng thuật ngữ private, hay show ra bằng public/protected
+- TẠO CLASS đóng gói mọi thứ đặc điểm+hành vi, che và ko che
+
+ABSTRACTION là lấy ra đặc trưng, ENCAPSULATION là gói trọn vẹn những gì cần làm
+nhận diện obj                     tạo class instance variable + method()
+
+
+3. INHERITANCE: tính tái sử dụng nhưng ko phải tái sử dụng, có xài luôn, ko cần thao tác j, ko phải copy & páte
+- Reuse lại code ko cand làm lại 
+- con thừa kế di sản di truyền sự thông minh và giỏi giang từ ba má
+- tăng tốc quá tình viết code, tận dụng và mở thêm của mình(dị biệt)
+ABSTRACT CLASS chẳng qua là cách gom, phân loại đối tượng cao thấp
+tận dụng thành quả kế thừa obj có cái gì??? dùng lại nguyê tắc trừu tượng hoaas + ENCAP
+
+
+4. POLYMORPHISM: đa hình/ đa ánh xạ - 1 ra nhiều
+Từu 1 hàm cha, n con @Oveeride qua mặt, chính là tính đa hình
+Gọi Cha mà con chạy
+đảm bảo tính đa dạng của các hành động vẫn chơi chung và thống nhất hành động qua tên gọi
+@Override hiện thực cho tính đa hình
+
+
+
